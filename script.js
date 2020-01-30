@@ -5,10 +5,11 @@ const m = moment();
 
 currentDay.innerText = m.format('LL');
 
-// Create a new table row element
-const button = document.getElementById("button");
-var tRow = $("<tr>");
+// When save button is clicked, it saves the text in the input field to the local storage
 
-button.addEventListener("click", function() {
-    $('#table > tbody:last-child').append('<tr>Hello World</tr><tr>Hello Universe</tr>');
+const button = document.getElementById("button");
+
+
+button.addEventListener("click", function(event) {
+    alert(event.target);
 });
