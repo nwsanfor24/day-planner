@@ -9,24 +9,25 @@ currentDay.innerText = m.format('LL');
 
 const button = document.getElementById("button");
 
-let input = [];
+let userInput = [];
 
-const addUserInput = (ev)=>{
-    ev.preventDefault(); // stops the form submitting
-    let input = {
+const addUserInput = (event)=>{
+    event.preventDefault(); // stops the form submitting
+    let userInput = {
         id: Date.now(),
-        input: document.getElementById('userInput').value,
+        userInput: document.getElementById('userInput').value,
     }
-    input.push(input);
+    userInput.push(userInput);
     document.forms[0].reset(); // to clear the form for the next entry
 
     //for display purposes only
-    console.warn('added', {input} );
+    console.warn('added', {userInput} );
 
     //saving to Local Storage
-    localStorage.setItem('UserInput', JSON.stringify(input) );
+    localStorage.setItem('UserInput', JSON.stringify(userInput) );
     
 }
+addUserInput();
 
 
 
