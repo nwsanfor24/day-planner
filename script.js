@@ -7,15 +7,15 @@ $(document).ready(function () {
     currentDay.innerText = m.format('LL');
 
     // When save button is clicked, it saves the text in the input field to the local storage
-    $("#btn").on("click", function (event) {
+    $(".saveBtn").on("click", function (event) {
         event.preventDefault();
 
 
-        let userInput = $("#userInput").val().trim();
+        let userInput = $(".mytext").val().trim();
         console.log(userInput)
 
 
-        localStorage.setItem("UserInput", JSON.stringify(userInput));
+        localStorage.setItem("mytext", JSON.stringify(userInput));
 
         JSON.parse(localStorage.getItem(userInput));
     });
