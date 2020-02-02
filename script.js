@@ -7,11 +7,6 @@ $(document).ready(function () {
     currentDay.innerText = m.format('LL');
 
     // When save button is clicked, it saves the text in the input field to the local storage
-
-    const button = document.getElementById("button");
-
-
-
     $("#btn").on("click", function (event) {
         event.preventDefault();
 
@@ -25,11 +20,11 @@ $(document).ready(function () {
         JSON.parse(localStorage.getItem(userInput));
     });
 
-    function clear() {
-        $("#article-section").empty();
-    };
+    // function clear() {
+    //     $("#article-section").empty();
+    // };
 
-    $("#clear-all").on("click", clear);
+    // $("#clear-all").on("click", clear);
 
     // const addUserInput = (event)=>{
     //     event.preventDefault(); // stops the form submitting
