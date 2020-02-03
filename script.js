@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     // using font awesome icon https://fontawesome.com/license
     // change description here - none
-    const saveIcon = "./images/save-regular.svg";
+    // const saveIcon = "./images/save-regular.svg";
 
     // Get stored todos from localStorage
     // Parsing the JSON string to an object
@@ -38,7 +38,7 @@ $(document).ready(function () {
         // this should only occur on first time the app is loaded in the browser
         // helpfully remind user that lunch is important
         planTextArr = new Array(9);
-        planTextArr[4] = "Picnic lunch outside";
+        planTextArr[4] = "Plan away!!";
     }
 
     if (test) { console.log("full array of plned text", planTextArr); }
