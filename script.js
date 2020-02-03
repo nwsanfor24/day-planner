@@ -21,10 +21,6 @@ $(document).ready(function () {
         nowHour12 = 1;
     }
 
-    // using font awesome icon https://fontawesome.com/license
-    // change description here - none
-    // const saveIcon = "./images/save-regular.svg";
-
     // Get stored todos from localStorage
     // Parsing the JSON string to an object
     let storedPlans = JSON.parse(localStorage.getItem("storedPlans"));
