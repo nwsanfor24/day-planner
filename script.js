@@ -21,9 +21,6 @@ $(document).ready(function () {
         nowHour12 = 1;
     }
 
-    let $dateHeading = $('#navbar-subtitle');
-    $dateHeading.text(now);
-
     // using font awesome icon https://fontawesome.com/license
     // change description here - none
     const saveIcon = "./images/save-regular.svg";
